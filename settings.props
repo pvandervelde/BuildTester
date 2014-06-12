@@ -320,7 +320,7 @@
             <PostInvokeScripts></PostInvokeScripts>
         </DeployStepsToExecute>
         <DeployStepsToExecute Include="$(DeployTargetPushTo)">
-            <Steps>$(DeployStepsPushToNuget);$(DeployStepsPushToGitHubRelease)</Steps>
+            <Steps>$(DeployStepsPushToGitHubRelease)</Steps>
             <PreInvokeScripts></PreInvokeScripts>
             <PostInvokeScripts></PostInvokeScripts>
         </DeployStepsToExecute>
