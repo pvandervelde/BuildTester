@@ -383,7 +383,7 @@
     -->
     <ItemGroup>
         <PushToGitHubReleaseSpecs Include="${VersionSemantic}">
-             <Repository>Nuclei</Repository>
+             <Repository>BuildTester</Repository>
              <Description>${ReleaseNotesShort}</Description>
              <IncludedFiles>$(DirBuildDeploy)\BuildTester-${VersionSemantic}.zip</IncludedFiles>
              <ExcludedFiles></ExcludedFiles>
