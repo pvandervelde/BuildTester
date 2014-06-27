@@ -172,3 +172,6 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+AssemblyInfo.BuildInformation.cs
+AssemblyInfo.InternalsVisibleTo.cs
+AssemblyInfo.VersionNumber.cs
