@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<archive>
+    <name>${ProductName}-${VersionSemantic}</name>
+    <files>
+        <file
+            src="${DirWorkspace}\license"
+            target="" />
+        <file
+            src="${DirWorkspace}\readme.md"
+            target="" />
+        <file
+            src="${DirSrc}\console\bin\${Configuration}\*.dll"
+            target="" />
+        <file
+            src="${DirSrc}\console\bin\${Configuration}\*.exe"
+            target="" />
+        <file
+            src="${DirSrc}\console\bin\${Configuration}\*.exe.config"
+            target="" />
+    </files>
+</archive>

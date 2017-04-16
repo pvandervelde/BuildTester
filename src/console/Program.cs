@@ -19,11 +19,8 @@ namespace BuildTester.Console
         /// <summary>
         /// The main entry point for the dataset application.
         /// </summary>
-        /// <param name="args">
-        /// The array containing the start-up arguments for the application.
-        /// </param>
         [STAThread]
-        static void Main(string[] args)
+        static void Main()
         {
             System.Console.WriteLine("Hello from BuildTester");
         }

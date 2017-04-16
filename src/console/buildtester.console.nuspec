@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>BuildTester.Console</id>
+        <version>$VersionSemantic$</version>
+        <authors>$CompanyName$</authors>
+        <owners>$CompanyName$</owners>
+        <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+        <projectUrl>$ProductUrl$</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+            The output of a repository that is used for testing build scripts and interaction with GitHub.
+        </description>
+        <releaseNotes>
+            $ReleaseNotes$
+        </releaseNotes>
+        <dependencies>
+            $Dependencies$
+        </dependencies>
+    </metadata>
+    <files>
+        <file
+            src="$DirSrc$\console\bin\$Configuration$\BuildTester.Console.exe"
+            target="lib\net45" />
+        <file
+            src="$DirSrc$\console\bin\$Configuration$\BuildTester.Console.pdb"
+            target="lib\net45" />
+        <file
+            src="$DirSrc$\console\bin\$Configuration$\BuildTester.Console.xml"
+            target="lib\net45" />
+        <file
+            src="$DirSrc$\console\**\*.cs"
+            target="src\console" />
+    </files>
+</package>
