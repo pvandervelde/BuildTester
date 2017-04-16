@@ -358,6 +358,7 @@
             <PostSteps>
             </PostSteps>
         </DeployStepsToExecute>
+        <!--
         <DeployStepsToExecute Include="$(DeployStepsPushToGitRepository)">
             <Properties>
                 Configuration=$(ProductionConfiguration);
@@ -372,6 +373,7 @@
             <PostSteps>
             </PostSteps>
         </DeployStepsToExecute>
+        -->
     </ItemGroup>
 
     <!--
@@ -520,7 +522,7 @@
     <ItemGroup>
         <PushToGitHubReleaseSpecs Include="${VersionSemantic} - My release">
              <Repository>$(GitHubRepositoryName)</Repository>
-             <Description>${ReleaseNotes}</Description>
+             <Description>New changes for version ${VersionSemantic}</Description>
              <IncludedFiles>
                  $(DirBuildDeploy)\${ProductName}-${VersionSemantic}.zip
              </IncludedFiles>
@@ -540,11 +542,11 @@
     <ItemGroup>
         <PushToGitBranchSpecs
             Condition=" '$(DirBuildDeploy)' != '' "
-            Include="$(DirBuildDeploy)\myarchive-${VersionSemantic}.zip">
+            Include="$(DirBuildDeploy)\${ProductName}-${VersionSemantic}.zip">
              <Repository>$(GitRemoteRepository)</Repository>
-             <Branch>master</Branch>
+             <Branch>test/push</Branch>
              <ExtractZipFiles>true</ExtractZipFiles>
-             <CommitMessage>New changes</CommitMessage>
+             <CommitMessage>New changes for version ${VersionSemantic}</CommitMessage>
         </PushToGitBranchSpecs>
     </ItemGroup>
 
